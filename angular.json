@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "si-angular-translate": {
+    "si-ng-translate": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/si-angular-translate",
+            "outputPath": "dist/si-ng-translate",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "si-angular-translate:build"
+            "browserTarget": "si-ng-translate:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "si-angular-translate:build:production"
+              "browserTarget": "si-ng-translate:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "si-angular-translate:build"
+            "browserTarget": "si-ng-translate:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
         }
       }
     },
-    "si-angular-translate-e2e": {
+    "si-ng-translate-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "si-angular-translate:serve"
+            "devServerTarget": "si-ng-translate:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "si-angular-translate:serve:production"
+              "devServerTarget": "si-ng-translate:serve:production"
             }
           }
         },
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "si-angular-translate"
+  "defaultProject": "si-ng-translate"
 }
